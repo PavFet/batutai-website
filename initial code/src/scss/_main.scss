@@ -1,0 +1,128 @@
+.about-us {
+  background-color: $pink--light;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $breakpoint992) {
+    flex-direction: row;
+   }
+}
+
+.about-us-img {
+  height: 280px;
+  width: 100%;
+  background-image: url('../img/castle.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 30px;
+  @media (min-width: $breakpoint370) {
+    height: 330px;
+  }
+  @media (min-width: $breakpoint480) {
+   height: 400px;
+   width: 500px;
+   margin: 0 auto;
+  }
+ 
+}
+
+.about-us-content {
+  @media (min-width: $breakpoint992) {
+    height: 100%;
+    width: 55%;
+   }
+}
+
+.about-us-content-title, .products-title {
+  color: $blue;
+  font-size: 30px;
+  font-family: $fontSecondary;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.about-us-content-text  {
+  color: $blue;
+  font-size: 20px;
+  font-family: $fontSecondary;
+  text-align: center;
+  line-height: 40px;
+}
+
+
+
+//Cards
+.products {
+  text-align: center;
+}
+.products-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.single-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-content {
+  text-align: center;
+
+  h4{
+    font-family: $fontSecondary;
+    color: $blue;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 10px;
+  }
+
+  p{
+    font-family: $fontSecondary;
+    color: $blue;
+  }
+
+  h6{
+    font-family: $fontSecondary;
+    color: $blue;
+    margin: 10px 0;
+  }
+}
+
+
+.card-btn button{
+  background-color: $yellow;
+  color: $blue;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  padding: 15px 20px;
+  border: 1px $blue solid;
+  border-radius: 5px;
+  &:hover {
+    background-color: $orange;
+    transition: all 0.5s ease;
+  }
+}
+
+.products-all {
+  display: inline-block;
+  margin: 40px 0;
+}
+
+.products-all-link {
+  background-color: $yellow;
+  color: $blue;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  padding: 20px 20px;
+  text-transform: capitalize;
+  border: 2px $blue solid;
+  border-radius: 5px;
+  &:hover {
+    background-color: $orange;
+    transition: all 0.5s ease;
+  }
+}
